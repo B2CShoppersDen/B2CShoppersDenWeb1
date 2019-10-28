@@ -31,17 +31,22 @@
   <div id="formContent">
 			
 			
-			<form>
+			<form method="post">
 			
 			<div class="row">
 						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
-							<input type="text" id="productId" class="fadeIn third"
-								name="productId" placeholder="Product ID">
+							<input type="text" class="fadeIn third"
+								name="productId" placeholder="Product ID" required="required" >
+						</div>
+					</div>
+					
+						<div class="row">
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
+	<input type="button" value="Delete Product" onclick="alert('Deleted Successfully!');">
 						</div>
 					</div>
 					
 
-	<input type="button" value="Delete Product" onclick="alert('Deleted Successfully!');">
 			
 			 <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" style="display: block; align-items:center;  margin: 0 auto;">

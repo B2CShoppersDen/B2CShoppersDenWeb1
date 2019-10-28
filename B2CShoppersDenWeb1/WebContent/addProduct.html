@@ -33,7 +33,7 @@
 			<div class="wrapper fadeInDown">
   <div id="formContent">
 
-			<form action="AdminController">
+			<form action="AdminController" method="post">
 			
 			<!--	<div class="options">
 				<!-- Home Page -->
@@ -41,28 +41,28 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
 							<input type="text" id="imageUrl" class="fadeIn second"
-								name="imageUrl" placeholder="Product Image URL">
+								name="imageUrl" placeholder="Product Image URL" required="required">
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
 							<input type="text" id="productId" class="fadeIn third"
-								name="productId" placeholder="Product ID">
+								name="productId" placeholder="Product ID" required="required">
 						</div>
 					</div>
 					
 					<div class="row">
 						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
 							<input type="text" id="productDesc" class="fadeIn fourth"
-								name="productDesc" placeholder="Product Description">
+								name="productDesc" placeholder="Product Description" required="required">
 						</div>
 						</div>
 						
 						<div class="row">
 						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
 							<input type="text" id="productPrice" class="fadeIn fifth"
-								name="productPrice" placeholder="Product Price">
+								name="productPrice" placeholder="Product Price" required="required">
 								<br>
 						</div>
 						</div>
@@ -70,8 +70,9 @@
 						<div class="row">
 						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
 							
-								<select>
-								<option>Select Category</option>
+								<select name="category" required>
+							
+								<option value=""></option>
 								<option value="product_category">Electronics</option>
 								<option value="product_category">Clothes</option>
 								</select>
@@ -81,7 +82,7 @@
 						<div class="row">
 						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
 							<input type="text" id="productDesc" class="fadeIn seventh"
-								name="productName" placeholder="Product Name">
+								name="productName" placeholder="Product Name" required="required">
 						</div>
 						</div>
 						
